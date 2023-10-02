@@ -11,6 +11,7 @@ body {
   color: #333;
   /* I'll give you this one for free lol */
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
 }
@@ -20,6 +21,10 @@ body {
   width: 480px;
   border-radius: 10px;
   box-shadow: 2px 4px 16px rgba(0,0,0,.2);
+
+  display:flex;
+  gap:16px;
+  padding: 16px;
 }
 
 .icon {
@@ -33,6 +38,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-shrink: 0;
 }
 
 .close-button {
@@ -48,6 +54,7 @@ body {
   justify-content: center;
   border: 1px solid #eee;
   padding: 0;
+  flex-shrink: 0;
 }
 
 button {
@@ -66,4 +73,20 @@ button.cancel {
   background: white;
   border: 1px solid #ddd;
   color: royalblue;
+}
+
+.promt-container{
+  display: flex;
+  flex-flow: column;
+  gap: 16px;
+}
+
+.header-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header{
+font-weight: bold;
+font-size:20px;
 }
